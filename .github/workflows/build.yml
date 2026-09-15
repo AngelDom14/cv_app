@@ -1,0 +1,43 @@
+name: Build static site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "angel_cv/**"
+      - "build_static.py"
+      - ".github/workflows/build.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r angel_cv/requirements.txt
+
+      - name: Build static site
+        run: python build_static.py
+
+      - name: Commit and push docs/ if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No changes to docs/, nothing to commit."
+          else
+            git commit -m "Auto-build static site [skip ci]"
+            git push
+          fi
