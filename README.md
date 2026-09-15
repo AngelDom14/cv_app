@@ -27,15 +27,29 @@ Then open http://127.0.0.1:8000/. Template changes show up on browser refresh.
 
 ## Publishing
 
+Publishing is automated with GitHub Actions (see `.github/workflows/build.yml`).
+Just push your template/asset changes to `main`:
+
 ```bash
-python build_static.py
 git add -A
 git commit -m "Update CV"
 git push
 ```
 
-`build_static.py` rebuilds `docs/` from scratch, so always run it before committing
-if the template or any asset changed.
+On push, the workflow installs dependencies, runs `build_static.py`, and — if
+`docs/` changed — commits and pushes the regenerated static site automatically
+(as the `github-actions[bot]` user). Check the **Actions** tab on GitHub to see
+it run.
+
+You can still run the build manually if you want to preview the generated
+`docs/` output locally before pushing:
+
+```bash
+python build_static.py
+```
+
+`build_static.py` rebuilds `docs/` from scratch, so a manual run overwrites
+whatever was there before.
 
 ## Credits
 
