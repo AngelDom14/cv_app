@@ -1,0 +1,461 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ángel Domínguez</title>
+  <link rel="shortcut icon" href="{% static 'document-text.svg' %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/prism.css' %}">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a class="logo m-0">CV<span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+          <li><a href="#home-section" class="nav-link active">Home</a></li>
+          <li><a href="#about-section" class="nav-link">About Me</a></li>
+          <li><a href="#experience-section" class="nav-link">Experience</a></li>
+          <li><a href="#technologies-section" class="nav-link">Skills</a></li>
+          <li><a href="#projects-section" class="nav-link">Personal Projects</a></li>
+
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="untree_co-section pb-0" id="home-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+            <div class="text-box" style="color: #6E6E73">
+                <h2><code>>></code> <span class="auto-input"></span></h2>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+              let typed = new Typed(".auto-input", {
+                strings: ["Data Analysis", "Data Engineering", "Aerospace Engineering"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+              })
+            </script>
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>Ángel<span class="text-primary">.</span> Domínguez</strong></h1>
+          <h2 class="subheading gsap-reveal-hero mb-4">
+            Data Analyst based in <strong>Madrid, Spain</strong>, with an engineering background in aerospace. Specialized in data pipelines, analytics and reporting. You can also check my <a href="https://www.linkedin.com/in/angel-dominguez-sanchez1/" target="_blank">LinkedIn Profile</a>.
+          </h2>
+          <p class="gsap-reveal-hero"><a href="{% static 'pdf/angeldominguez_cv.pdf' %}" target="_blank" class="btn btn-outline-black">Click here to download my CV as PDF</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+    <div class="untree_co-section pb-0" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-7 mx-auto text-center author-wrap">
+            <img src="{% static 'images/profile.jpg' %}" alt="Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Ángel Domínguez</h3>
+            <p class="gsap-reveal-hero">Data Analyst | MSc in Space Engineering | ESA intern</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+
+            <p class="gsap-reveal-hero">I studied a Bachelor's degree in Materials Engineering (bilingual) at <a href="https://www.upm.es/" target="_blank"><span style="color:#f7f7f7" class="bolded">Universidad Politécnica de Madrid (UPM),</span></a> including a semester abroad at <a href="https://www.msu.edu/" target="_blank"><span style="color:#f7f7f7" class="bolded">Michigan State University.</span></a> My Final Degree Project, <a href="{% static 'pdf/tfg_angel_dominguez.pdf' %}" target="_blank"><span style="color:#f7f7f7" class="bolded">consisted on evaluating the corrosive behavior of electrodes exposed to non-thermal plasma in atmospheric air.</span></a></p>
+
+            <p class="gsap-reveal-hero">Afterwards I completed a Master's degree in Space Engineering at <a href="https://www.uc3m.es/" target="_blank"><span style="color:#f7f7f7" class="bolded">Universidad Carlos III de Madrid (UC3M).</span></a> My Master Thesis, <a href="{% static 'pdf/tfm_angel_dominguez.pdf' %}" target="_blank"><span style="color:#f7f7f7" class="bolded">consisted on the 3D design and study of lunar landing pads using CFD analysis software.</span></a></p>
+
+            <p class="gsap-reveal-hero">My career started on the engineering side: an internship as Mechanical & Physics Engineer at Capgemini Engineering, an internship as Hardware Engineer at the <span style="color:#f7f7f7" class="bolded">European Space Agency</span> working on the Electronic Fieldbook project at the European Astronaut Center, and a role as Mechanical & Thermal Engineer at <span style="color:#f7f7f7" class="bolded">Thales Alenia Space.</span></p>
+
+            <p class="gsap-reveal-hero">From there I moved into data, first as a Data & Engineer Analyst at Capgemini Engineering, applying Python and machine learning to structural and thermal calculations, and currently as a <span style="color:#f7f7f7" class="bolded">Data Analyst at Prima Assicurazioni,</span> building data pipelines and reporting tools for the claims business in Spain.</p>
+
+            <p class="gsap-reveal-hero mb-5">I combine an analytical engineering foundation with hands-on experience in Python, SQL and BI tools, and I'm currently completing a Bachelor's degree in Mathematics on the side.</p>
+
+            <p class="gsap-reveal-hero text-center"><a href="https://www.linkedin.com/in/angel-dominguez-sanchez1/" target="_blank" class="btn btn-outline-black">More information on LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="untree_co-section pb-0" id="experience-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Experience</strong></h2>
+            <p class="gsap-reveal-hero">Job Experiences</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+    <section class="job-experience">
+      <div class="container">
+
+        <!-- PRIMA ASSICURAZIONI -->
+          <div class="row">
+              <div class="col-md-2">
+                  <!-- Company Icon -->
+                  <img src="{% static 'images/prima_logo.png' %}" alt="Prima Assicurazioni" class="img-fluid">
+              </div>
+              <div class="col-md-10">
+                  <!-- Job Position Title -->
+                  <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="prima-exp">Data Analyst</h1>
+                  <!-- Company Subtitle -->
+                  <p class="job-dates-company" style="color: #84848a">
+                    <span class="job-dates">Prima Assicurazioni – Claims Spain, Madrid (May 2025 – today)</span>
+                </p>
+                  <!-- Experience Description -->
+                  <p class="experience-description">
+                    Optimized a 7,000+ line reporting codebase, reducing report generation time from 2–3 days to under 1 day.<br>
+                    Collaborated with product managers to define data requirements for the new internal claims platform, ensuring incoming data met quality standards and updating the Databricks catalogue to integrate new data sources.<br>
+                    Led the end-to-end design and delivery of all Tableau reporting dashboards for the company's anti-fraud project.<br>
+                    Managed data assets in Databricks and developed automated Python data pipelines for operational and analytical use cases.<br>
+                    Managed code versioning through GitHub and worked across development and production environments.
+                  </p>
+          </div>
+      </div>
+          <!-- CAPGEMINI ENGINEERING (both stints grouped together) -->
+          <div class="row">
+            <div class="col-md-2">
+                <!-- Company Icon -->
+                <img src="{% static 'images/capgemini_logo.png' %}" alt="Capgemini Engineering" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+                <!-- Company Title -->
+                <h1 class="job gsap-reveal-hero mb-0" style="color: #424245;" id="capgemini-exp">Data & Engineering Analyst</h1>
+                <p class="job-dates-company" style="color: #84848a">
+                  <span class="job-dates">Capgemini Engineering, Madrid</span>
+              </p>
+
+                <!-- Role 1: Data & Engineering Analyst -->
+                <p class="experience-description gsap-reveal-hero mb-1" style="color: #424245;"><strong>Data & Engineering Analyst</strong> <span style="color: #84848a">(March 2024 – May 2025)</span></p>
+                <p class="experience-description">
+                  Data processing and analysis of mechanical and thermal calculations for structures using Python (NumPy, Pandas, Matplotlib).<br>
+                  Data handling and visualization using SQL and Tableau.<br>
+                  Neural network development using Python (TensorFlow) for quick structural vibration/noise approximations.<br>
+                  Code version management and control with Git/Bitbucket.
+                </p>
+
+                <!-- Role 2: Intern Mechanical & Physics Engineer -->
+                <p class="experience-description gsap-reveal-hero mb-1" style="color: #424245;"><strong>Intern Mechanical & Physics Engineer</strong> <span style="color: #84848a">(July 2021 – September 2022)</span></p>
+                <p class="experience-description">
+                  Early hands-on experience in mechanical and physics engineering, ahead of my move into data.
+                </p>
+            </div>
+        </div>
+
+        <!-- THALES ALENIA SPACE -->
+        <div class="row">
+          <div class="col-md-2">
+              <!-- Company Icon -->
+              <img src="{% static 'images/thales_logo.png' %}" alt="Thales Alenia Space" class="img-fluid">
+          </div>
+          <div class="col-md-10">
+              <!-- Job Position Title -->
+              <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="thales-exp">Mechanical & Thermal Engineer</h1>
+              <!-- Company Subtitle -->
+              <p class="job-dates-company" style="color: #84848a">
+                <span class="job-dates">Thales Alenia Space, Madrid (January 2023 – January 2024)</span>
+            </p>
+              <!-- Experience Description -->
+              <p class="experience-description">
+                Mechanical and thermal engineering for space hardware structures.
+              </p>
+          </div>
+      </div>
+
+      <!-- ESA -->
+      <div class="row">
+        <div class="col-md-2">
+            <!-- Company Icon -->
+            <img src="{% static 'images/esa_logo.png' %}" alt="European Space Agency" class="img-fluid">
+        </div>
+        <div class="col-md-10">
+            <!-- Job Position Title -->
+            <h1 class="job gsap-reveal-hero mb-0"style="color: #424245;" id="esa-exp">Intern Hardware Engineer</h1>
+            <!-- Company Subtitle -->
+            <p class="job-dates-company" style="color: #84848a">
+              <span class="job-dates">European Space Agency, Cologne, Germany (September 2022 – January 2023)</span>
+          </p>
+            <!-- Experience Description -->
+            <p class="experience-description">
+              Electronic Fieldbook project at the European Astronaut Center (EAC).
+            </p>
+        </div>
+    </div>
+
+      </div>
+  </section>
+
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="technologies-section"><strong>Skills</strong></h2>
+            <p class="gsap-reveal-hero">Technologies and soft skills</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-code.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Programming languages</h3>
+              <p class="gsap-reveal-hero">Python, SQL, PySpark, C++ and Matlab.</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-framework.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Data tools & libraries</h3>
+              <p class="gsap-reveal-hero">Pandas, TensorFlow and automated Python data pipelines for operational and analytical use cases.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/cloud-done.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Cloud & data platforms</h3>
+              <p class="gsap-reveal-hero">Databricks, AWS, and data governance for analytics platforms.</p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-ai.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">AI & Machine Learning</h3>
+              <p class="gsap-reveal-hero">Neural network development in TensorFlow, applied to structural vibration/noise approximation for engineering use cases. Daily use of AI tools and assistants to speed up development, data analysis and documentation.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-tux.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Linux</h3>
+              <p class="gsap-reveal-hero">Experience handling Linux/UNIX systems for development and data pipelines.</p>
+                <code class="language-shell line-highlight gsap-reveal-hero">
+                  $ echo Nice to meet you $(whoami)! 
+                </code>
+
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="{% static 'images/svg/logo-skills.svg' %}" alt="Image" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Languages</h3>
+              <p class="gsap-reveal-hero">Spanish (native), English (fluent) and French (basic).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section testimonial-wrap">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0" id="projects-section"><strong>Personal Projects</strong></h2>
+            <p class="gsap-reveal-hero">Projects I have worked on in my free time</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="200">
+
+          <div class="owl-carousel owl-3-slider">
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/svg/curriculum-resume.svg' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Curriculum Vitae website</h3>
+                  <span class="caption">You are already here!</span>
+                </div>
+                <blockquote>
+                  <p>Development of this static website containing my CV using Django for development and GitHub Pages for deployment.</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/pi_logo.png' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>Bachelor's in Mathematics</h3>
+                  <span class="caption">In progress</span>
+                </div>
+                <blockquote>
+                  <p>Currently completing a Bachelor's degree in Mathematics on the side, alongside my professional work.</p>
+                </blockquote>
+              </div>
+            </div>
+            <!-- END .item -->
+
+            <div class="item">
+              <div class="testimonial-v1">
+                <img src="{% static 'images/svg/more.svg' %}" alt="Image" class="img-fluid">
+                <div class="mb-4">
+                  <h3>More to come!</h3>
+                </div>
+              </div>
+            </div>
+            <!-- END .item -->
+          </div>
+        </div>
+      <!-- </div>
+    </div> -->
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Links</strong></h2>
+            <p class="gsap-reveal-hero">Get in touch!</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="https://www.linkedin.com/in/angel-dominguez-sanchez1/" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-linkedin"></span> LinkedIn </a>
+              <a href="https://github.com/AngelDom14" target="_blank" class="btn btn-outline-primary" role="button" data-bs-toggle="button"><span class="icon-github"></span> GitHub </a>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+
+
+
+
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">Ángel Domínguez &copy;<script>document.write(new Date().getFullYear());</script>
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/wave-animate.js' %}"></script>
+    <script src="{% static 'js/circle-progress.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'js/scrollmagic.animation.gsap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/prism.js' %}"></script>
+  </body>
+  </html>
